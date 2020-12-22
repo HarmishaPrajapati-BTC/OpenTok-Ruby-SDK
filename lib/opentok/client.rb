@@ -24,7 +24,7 @@ module OpenTok
       })
       @api_key = api_key
       @api_secret = api_secret
-      @timeout_length = opts[:timeout_length] || 200
+      @timeout_length = 200
       self.class.open_timeout @timeout_length
     end
 
