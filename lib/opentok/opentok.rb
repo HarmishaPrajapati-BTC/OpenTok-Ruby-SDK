@@ -83,7 +83,7 @@ module OpenTok
     def initialize(api_key, api_secret, opts={})
       @api_key = api_key.to_s()
       @api_secret = api_secret
-      @timeout_length = opts[:timeout_length] || 2
+      @timeout_length = opts[:timeout_length] || 200
       @api_url = opts[:api_url] || API_URL
       @ua_addendum = opts[:ua_addendum]
     end
